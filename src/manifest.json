@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Bitbucketeer",
+	"description": "Adds functionality to bitbucket",
+	"version": "0.0.1",
+	"browser_action": {
+		"default_title": "Bitbucketeer"
+	},
+ 	"content_scripts": [{
+		"matches": [
+			"*://*.bitbucket.org/*"
+		],
+		"js": [
+			"content.min.js"
+		]
+	}]
+}
